@@ -1,0 +1,11 @@
+<saveables id="6">
+  <id1>
+    <component name="UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <position type="UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">(3.7, 6.1, 10.1)</position>
+      <localPosition type="UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">(3.7, 6.1, 10.1)</localPosition>
+      <rotation type="UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">(0.0, 0.0, 0.0, 1.0)</rotation>
+      <localRotation type="UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">(0.0, 0.0, 0.0, 1.0)</localRotation>
+      <localScale type="UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">(1.0, 1.0, 1.0)</localScale>
+    </component>
+  </id1>
+</saveables>
