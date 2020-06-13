@@ -14,7 +14,7 @@ namespace Common.SaveLoadSystem
 
         static HierarchyIcons()
         {
-            texturePanel = AssetDatabase.LoadAssetAtPath("Assets/SaveLoadTool/save_icon.png", typeof(Texture2D)) as Texture2D; //TODO: find the right path
+            texturePanel = AssetDatabase.LoadAssetAtPath("Assets/SaveLoadTool/Icons/save_icon.png", typeof(Texture2D)) as Texture2D; //TODO: find the right path
             EditorApplication.hierarchyWindowItemOnGUI += HierarchyItem;
         }
 
@@ -69,8 +69,21 @@ namespace Common.SaveLoadSystem
             SaveSpecificEditor.ShowWindow(obj);
         }
 
+        [MenuItem("GameObject/Fancy save", false, 18)]
+        private static void OpenFancySaveWindow(MenuCommand command)
+        {
+            GameObject obj = (GameObject)command.context;
+            FancySaveWindow.ShowWindow(obj);
+        }
+
         [MenuItem("GameObject/Save specific", true)]
         private static bool ValidateSaveWindow(MenuCommand command)
+        {
+            GameObject obj = (GameObject)command.context;
+            return obj.GetComponent<SaveableIdentifier>() != null;
+        }
+
+        private static bool ValidateOpenFancySaveWindow(MenuCommand command)
         {
             GameObject obj = (GameObject)command.context;
             return obj.GetComponent<SaveableIdentifier>() != null;
